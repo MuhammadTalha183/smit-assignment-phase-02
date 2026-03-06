@@ -56,4 +56,68 @@
 //     console.log("Please Refuel your Car ")
 // }
 
+// . Run this script, & check whether alert message would be
+// displayed or not. Record the outputs.
+// a. var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
 // ************************************ Code **************************
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+
+// 6. Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute
+// grade as per following table:
+
+// ************************************ Code **************************
+let sub1 = Number ( prompt("Enter you subject 1 marks"))
+let sub2 = Number (prompt("Enter you subject 2 marks"))
+let sub3 = Number (prompt("Enter you subject 3 marks"))
+
+let total_marks = 300
+let marks_obtained = sub1 + sub2 +sub3
+
+let percentage = (marks_obtained / total_marks ) * 100
+
+if (percentage >= 80){
+    console.log(`Marks Sheet \n \n \n Total Marks : ${total_marks} \n
+        Marks Obtained : ${marks_obtained} \n 
+        Percentage : ${percentage} \n 
+        Grade : A-one \n 
+        Remarks : Excellent `)
+}else if (percentage >= 70){
+console.log(`Marks Sheet \n \n \n Total Marks : ${total_marks} \n
+        Marks Obtained : ${marks_obtained} \n 
+        Percentage : ${percentage} \n 
+        Grade : A-one \n 
+        Remarks : Good `)
+
+}else if (percentage >= 60){
+   console.log(`Marks Sheet \n \n \n Total Marks : ${total_marks} \n
+        Marks Obtained : ${marks_obtained} \n 
+        Percentage : ${percentage} \n 
+        Grade : A-one \n 
+        Remarks : You need to improve `)
+
+}else{
+   console.log("Fail")
+}
