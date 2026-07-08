@@ -117,3 +117,10 @@ const words=["cat","elephant","car","computer","pen"];
 const char = words.filter(char => char.length > 5);
 
 console.log(char);
+
+// find()
+// Q11
+
+// Find the first number greater than 10.
+
+const numbers=[2,5,7,15,20];
