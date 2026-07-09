@@ -137,3 +137,28 @@ console.log(greaterTen); // Output: 15
 const findStudent = studentss.find(name => name.name === "Sara");
 
 console.log(findStudent); // Output: {name: "Sara", age: 18}
+
+
+// Q13
+
+// Find the first expensive product (>5000).
+
+const expensiveProduct = products.find(product => product.price > 5000);
+
+console.log(expensiveProduct); // Output: {name: "Laptop", price: 90000}
+
+// Q14
+
+// Find the first even number.
+
+const firstEven = num.find(n => n % 2 === 0);
+
+console.log(firstEven); // Output: 2
+
+// Q15
+
+// Find the first user whose account is active.
+
+const firstActiveUser = users.find (u => u.active === true);
+
+console.log(firstActiveUser); // Output: {name: "Ali", active: true}
