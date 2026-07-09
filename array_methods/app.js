@@ -123,4 +123,17 @@ console.log(char);
 
 // Find the first number greater than 10.
 
-const numbers=[2,5,7,15,20];
+const num = [2,5,7,15,20];
+
+
+const greaterTen = num.find(n => n > 10);
+
+console.log(greaterTen); // Output: 15
+
+// Q12
+
+// Find the student whose name is "Sara".
+
+const findStudent = studentss.find(name => name.name === "Sara");
+
+console.log(findStudent); // Output: {name: "Sara", age: 18}
