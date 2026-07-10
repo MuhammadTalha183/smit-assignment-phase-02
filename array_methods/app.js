@@ -274,3 +274,32 @@ const userList = [
 
 const usernames = userList.map(user => `${user.firstName}_${user.lastName}`);   
 console.log(usernames); // Output: ["Ali_Khan", "Ahmed_Ali", "Sara_Ahmed"]
+
+
+// Q44
+
+// Generate slugs.
+
+const titles = ["Hello World", "JavaScript is Awesome", "Learn Programming"];
+
+const slugs = titles.map(title => title.toLowerCase().replace(/\s+/g, '-'));
+console.log(slugs); // Output: ["hello-world", "javascript-is-awesome", "learn-programming"]
+
+
+// Q45
+
+// Convert nested objects into another structure.
+
+const nestedObjects = [
+    {id:1, name:"Ali", address:{city:"Karachi", country:"Pakistan"}},
+    {id:2, name:"Ahmed", address:{city:"Lahore", country:"Pakistan"}},
+    {id:3, name:"Sara", address:{city:"Islamabad", country:"Pakistan"}}
+];
+
+const convertedStructure = nestedObjects.map(obj => ({
+    id: obj.id,
+    name: obj.name,
+    city: obj.address.city,
+    country: obj.address.country
+}));
+console.log(convertedStructure); // Output: [{id: 1, name: "Ali", city: "Karachi", country: "Pakistan"}, {id: 2, name: "Ahmed", city: "Lahore", country: "Pakistan"}, {id: 3, name: "Sara", city: "Islamabad", country: "Pakistan"}]
