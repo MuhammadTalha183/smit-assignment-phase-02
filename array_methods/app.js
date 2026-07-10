@@ -230,3 +230,47 @@ const string = arr.reduce((acc, current) => {
 }, "");
 
 console.log(string); // Output: "I Love JavaScript"
+
+
+// "
+// 🔴 Level 3 - Advanced
+// map()
+// Q41
+
+// Flatten users into only emails.
+
+const userss = [
+    {name:"Ali",email:"a@gmail.com"},
+    {name:"Ahmed",email:"b@gmail.com"},
+    {name:"Sara",email:"c@gmail.com"}
+];
+
+const emails = userss.map(user => user.email);
+console.log(emails); // Output: ["a@gmail.com", "b@gmail.com", "c@gmail.com"]
+
+// Q42
+
+// Convert products into invoice format.
+
+const productss = [
+    {name:"Laptop",price:90000},
+    {name:"Mouse",price:800},
+    {name:"Keyboard",price:1500}
+];
+
+const invoice = productss.map(product => `${product.name}: $${product.price}`);
+console.log(invoice); // Output: ["Laptop: $90000", "Mouse: $800", "Keyboard: $1500"]   
+
+
+// Q43
+
+// Generate usernames
+
+const userList = [
+    {firstName:"Ali",lastName:"Khan"},
+    {firstName:"Ahmed",lastName:"Ali"},
+    {firstName:"Sara",lastName:"Ahmed"}
+];  
+
+const usernames = userList.map(user => `${user.firstName}_${user.lastName}`);   
+console.log(usernames); // Output: ["Ali_Khan", "Ahmed_Ali", "Sara_Ahmed"]
