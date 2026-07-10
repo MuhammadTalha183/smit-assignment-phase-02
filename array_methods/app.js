@@ -162,3 +162,71 @@ console.log(firstEven); // Output: 2
 const firstActiveUser = users.find (u => u.active === true);
 
 console.log(firstActiveUser); // Output: {name: "Ali", active: true}
+
+
+// reduce()
+// Q36
+
+// Find maximum number.
+
+const maximumNumber = num.reduce((max, current ) => {
+    return current > max ? current : max;
+})
+console.log(maximumNumber); // Output: 20
+
+// Q37
+
+// Find minimum number.
+
+const minimumNumber = num.reduce((min, current)=>{
+    return current < min ? current : min 
+})
+
+console.log(minimumNumber); // Output: 2
+
+
+// Q38
+
+// Calculate average marks.
+
+
+const marks = [80, 90, 70, 85, 95];
+
+const averageMarks = marks.reduce((avg , current )=> {
+    return avg + current  / marks.length
+} , 0)
+
+console.log(averageMarks); // Output: 84
+
+// Q39
+
+// Count total students.
+
+const myStudents = [
+    {name:"Ali",age:20},
+    {name:"Ahmed",age:22},
+    {name:"Sara",age:19}
+];
+
+const totalStudents = myStudents.reduce((total , current )=> {
+
+    // console.log(total)
+    // console.log(current)
+    return total + 1
+} , 0)
+
+console.log(totalStudents); // Output: 3
+
+// Q40
+
+// Create one string.
+
+const arr = ["I","Love","JavaScript"]
+
+const string = arr.reduce((acc, current) => {
+    // console.log(acc)
+    // console.log(current)
+    return acc + " " + current;
+}, "");
+
+console.log(string); // Output: "I Love JavaScript"
